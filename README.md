@@ -78,4 +78,4 @@ Voir la documentation `electron-builder` et `electron-updater` pour une configur
 - Supporter des options d'installation différée et redémarrage programmé.
 
 ## Licence
-Ce dépôt ne contient pas de licence explicite (ajoute un fichier LICENSE si nécessaire).
+MIT
