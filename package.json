@@ -1,11 +1,16 @@
 {
   "name": "electron-app",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A simple electron app for testing auto updates.",
   "license": "ISC",
   "author": "Endour",
   "type": "commonjs",
   "main": "main.js",
+  "repository": "https://github.com/endourdev/electron-app",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "build": {
     "appId": "com.example.app",
     "productName": "Electron App",
@@ -13,7 +18,7 @@
       "target": "nsis"
     },
     "directories": {
-      "output": "dist"
+      "output": "distv3"
     }
   },
   "scripts": {
@@ -22,10 +27,11 @@
     "build": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^39.2.7"
+    "electron-builder": "^26.0.12",
+    "electron": "^39.2.7",
+    "nodemon": "^3.1.11"
   },
   "dependencies": {
-    "electron-builder": "^26.0.12",
     "electron-updater": "^6.6.2"
   }
 }
