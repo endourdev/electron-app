@@ -2,3 +2,5 @@ node_modules
 dist
 dist-v
 distv3
+.last_hash
+current_hash.txt

@@ -47,6 +47,10 @@ class MainScreen {
     this.window.webContents.send("updateMessage", message);
   }
 
+  showProgress(percent) {
+    this.window.webContents.send("updateProgress", percent);
+  }
+
   close() {
     this.window.close();
     ipcMain.removeAllListeners();

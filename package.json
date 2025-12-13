@@ -1,6 +1,6 @@
 {
   "name": "electron-app",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "description": "A simple electron app for testing auto updates.",
   "license": "ISC",
   "author": "Endour",
@@ -18,13 +18,14 @@
       "target": "nsis"
     },
     "directories": {
-      "output": "distv3"
+      "output": "dist"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "build-release": "electron-builder && node scripts/createRelease.js"
   },
   "devDependencies": {
     "electron-builder": "^26.0.12",

@@ -8,12 +8,17 @@
   </head>
   <body>
     <h1>This is my auto-updated app</h1>
-    <strong><div id="message">Status message...</div></strong>
+    <!-- <strong><div id="message">Status message...</div></strong> -->
+
+    <div id="updateProgress" style="display:none; margin-top:8px;">
+      <progress id="progressBar" value="0" max="100" style="width:300px; height:16px;"></progress>
+      <span id="progressText" style="margin-left:8px">0%</span>
+    </div>
 
     <br />
     <p>
       This app will demonstrate how we can apply an auto update to an
-      application. version 0.0.3
+      application. version 0.0.8
     </p>
 
     <script defer src="./mainView.js"></script>
