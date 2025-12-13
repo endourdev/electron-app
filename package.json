@@ -1,0 +1,31 @@
+{
+  "name": "electron-app",
+  "version": "0.0.1",
+  "description": "A simple electron app for testing auto updates.",
+  "license": "ISC",
+  "author": "Endour",
+  "type": "commonjs",
+  "main": "main.js",
+  "build": {
+    "appId": "com.example.app",
+    "productName": "Electron App",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^39.2.7"
+  },
+  "dependencies": {
+    "electron-builder": "^26.0.12",
+    "electron-updater": "^6.6.2"
+  }
+}
